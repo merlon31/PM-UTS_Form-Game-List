@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Iv_Game"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/idGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Game"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/Iv_Game"/>
+
+        <TextView
+            android:id="@+id/idRilis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Tanggal Rilis"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/Iv_Game"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
